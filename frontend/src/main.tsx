@@ -3,8 +3,11 @@ import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import AuthOProviderWithNavigate from "./auth/AuthOProviderWithNavigate";
 createRoot(document.getElementById("root")!).render(
 	<BrowserRouter>
-		<App />
+		<AuthOProviderWithNavigate>
+			<App />
+		</AuthOProviderWithNavigate>
 	</BrowserRouter>
 );
