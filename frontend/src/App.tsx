@@ -1,10 +1,11 @@
-import "./App.css";
-import { Button } from "./components/ui/button";
+import { Routes, Route, Navigate } from "react-router-dom";
 
-function App() {
-	return <Button>click me</Button>;
-}
+const AppRoutes = () => (
+	<Routes>
+		<Route path="/" element={<span>home</span>} />
+		<Route path="/user-profile" element={<span>profile</span>} />
+		<Route path="/*" element={<Navigate to="/" />} />
+	</Routes>
+);
 
-export default App;
-
-
+export default AppRoutes;
