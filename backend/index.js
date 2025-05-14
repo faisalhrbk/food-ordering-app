@@ -1,13 +1,13 @@
 //Core Modules
 
-//External/Packages Modules
-
-import express from "express"
+//External Packages/Modules
+import express from "express";
 import cors from "cors";
 import "dotenv/config";
 
 //* Local Modules
 import mongoConnect from "./config/database.js";
+import userRouter from "./routes/userRouter.js";
 
 // App Config
 const app = express();
