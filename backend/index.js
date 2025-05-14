@@ -1,7 +1,8 @@
 //Core Modules
 
 //External/Packages Modules
-import express from "express";
+
+import express from "express"
 import cors from "cors";
 import "dotenv/config";
 
@@ -19,6 +20,8 @@ app.use(cors());
 app.get("/", (_, res) => {
 	res.json({ message: "sit back relax and enjoy the show" });
 });
+
+app.use("/api/user", userRouter);
 
 // Start Server
 const PORT = process.env.PORT || 3000;
