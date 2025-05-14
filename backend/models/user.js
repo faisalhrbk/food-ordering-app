@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { userRouter } from "../routes/userRouter";
 const userSchema = new mongoose.Schema({
 	auth0Id: {
 		type: String,
@@ -16,5 +15,4 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model("User", userSchema);
-export default User; //* api/user
-userRouter.post("/", createCurrentUser);
+export default User;
