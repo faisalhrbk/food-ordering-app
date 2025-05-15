@@ -4,9 +4,10 @@ import {
 	createCurrentUser,
 	updateCurrentUser,
 } from "../controllers/userController.js";
-import { jwtCheck } from "../middlewares/auth.js";
+import { jwtCheck, jwtParse } from "../middlewares/auth.js";
 
-//* api/user
+//* createUser api/user
 userRouter.post("/", jwtCheck, createCurrentUser);
-userRouter.put('/', updateCurrentUser)
+//*updateUser api/user
+userRouter.put('/', jwtParse, updateCurrentUser)
 export default userRouter;
