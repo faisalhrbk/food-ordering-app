@@ -8,7 +8,7 @@ type createUserRequest = {
 };
 export const useCreateMyUser = () => {
 	const createMyUserRequest = async (user: createUserRequest) => {
-		const response = await fetch(`${API_BASE_URL}api/user`, {
+		const response = await fetch(`${API_BASE_URL}/api/user`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
