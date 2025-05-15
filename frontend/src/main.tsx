@@ -3,7 +3,7 @@ import "./index.css";
 
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import AuthOProviderWithNavigate from "./auth/AuthOProviderWithNavigate";
+import AuthOProviderWithNavigate from "./auth/Auth0ProviderWithNavigate";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient({
