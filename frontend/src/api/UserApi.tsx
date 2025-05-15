@@ -38,3 +38,9 @@ export const useCreateMyUser = () => {
 		isSuccess,
 	};
 };
+
+
+export const useUpdateUser = () => {
+	const {getAccessTokenSilently} = useAuth0();
+const updateByUserRequest = 
+}
